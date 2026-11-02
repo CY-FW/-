@@ -44,6 +44,7 @@
     { id: "tycoon", name: "资本·开公司", need: "social", kind: "industry" },
   ];
 
+  // 恋爱事件与重冲突剧情：始终由内置的原创 NPC 承担，不进入可被外部覆盖的 EVENTS。
   const ROMANCE_EVENTS = [
     {
       id: "r_meet", title: "初遇",
@@ -92,84 +93,21 @@
     },
   ];
 
-  const CAREER_EVENTS = [
-    { id: "c_audition", title: "试镜机会", text: "一个剧组开放试镜，需要 {need} 支撑。",
-      need: true,
-      opts: [
-        { t: "全力争取", succ: 0.6, win: { fame: 8, reputation: 4, mood: 6 }, lose: { mood: -6, reputation: -2 } },
-        { t: "稳妥放弃", mood: 2 },
-      ] },
-    { id: "c_album", title: "发片机会", text: "唱片公司愿意给你一张专辑排期。", need: "music",
-      opts: [
-        { t: "倾力制作", succ: 0.55, win: { fame: 14, wealth: 20, reputation: 6 }, lose: { wealth: -10, mood: -8 } },
-        { t: "保守交差", succ: 0.8, win: { fame: 6, wealth: 6 } },
-      ] },
-    { id: "c_film", title: "电影角色", text: "一位导演想找你演一个重要角色。", need: "film",
-      opts: [
-        { t: "接下挑战", succ: 0.5, win: { fame: 12, reputation: 10, mood: 8 }, lose: { reputation: -4, mood: -6 } },
-        { t: "先接配角", succ: 0.85, win: { fame: 5, reputation: 4 } },
-      ] },
-    { id: "c_variety", title: "综艺邀约", text: "一档热门综艺找你做常驻。", need: "film",
-      opts: [
-        { t: "参加", succ: 0.7, win: { fame: 16, wealth: 14, mood: 4 }, lose: { mood: -4 } },
-        { t: "推掉", mood: -2 },
-      ] },
-    { id: "c_company", title: "开公司", text: "你可以注册工作室或公司，承接项目。", need: "industry",
-      opts: [
-        { t: "大胆创业", succ: 0.45, win: { wealth: 40, fame: 10, reputation: 6 }, lose: { wealth: -25, mood: -10 } },
-        { t: "合伙试水", succ: 0.75, win: { wealth: 18, social: 6 } },
-      ] },
-    { id: "c_plagiarism", title: "撞车风波", text: "有人指控你的作品“撞创意”，媒体开始关注。",
-      opts: [
-        { t: "正面回应", succ: 0.6, win: { reputation: 6, mood: 4 }, lose: { reputation: -10, mood: -8 } },
-        { t: "冷处理", reputation: -4, mood: -4 },
-      ] },
-  ];
+  // 事业/社交/人生事件从 data/events.js（window.EVENTS）读取；缺省时回退到内置精简表。
+  const CAREER_EVENTS = (window.EVENTS && window.EVENTS.career) || [];
+  const SOCIAL_EVENTS = (window.EVENTS && window.EVENTS.social) || [];
+  const LIFE_EVENTS = (window.EVENTS && window.EVENTS.life) || [];
 
-  const SOCIAL_EVENTS = [
-    { id: "s_help", text: "{n} 最近遇到点麻烦，向你开口求助。",
-      opts: [
-        { t: "出手相助", aff: 16, trust: 14, favorDebt: -10, wealth: -6 },
-        { t: "婉拒", aff: -10, trust: -6 },
-      ] },
-    { id: "s_rival", text: "你和 {n} 竞争同一个资源，气氛紧张。",
-      opts: [
-        { t: "正面争夺", succ: 0.5, win: { fame: 6, social: 4 }, lose: { aff: -12, reputation: -2 } },
-        { t: "让一步", aff: 6, trust: 4, mood: 2 },
-      ] },
-    { id: "s_gossip", text: "圈内传出关于 {n} 的闲话，问你怎么看。",
-      opts: [
-        { t: "替他说话", aff: 18, trust: 10 },
-        { t: "不站队", aff: 0 },
-        { t: "跟着传", aff: -20, trust: -12, reputation: -4 },
-      ] },
-    { id: "s_offer", text: "{n} 想拉你进一个合作项目。",
-      cond: (r) => r.trust >= 40,
-      opts: [
-        { t: "答应结盟", aff: 12, trust: 12, social: 8, wealth: 10 },
-        { t: "再观察", aff: -2 },
-      ] },
-  ];
-
-  const LIFE_EVENTS = [
-    { id: "l_health", text: "连轴转的工作让你身体亮了红灯。",
-      opts: [
-        { t: "休息调养", health: 12, mood: 4, wealth: -4 },
-        { t: "硬扛", health: -12, mood: -6 },
-      ] },
-    { id: "l_mood", text: "舆论的一场小风波影响了你的心情。",
-      opts: [
-        { t: "运动解压", mood: 12, health: 4 },
-        { t: "借酒消愁", mood: 4, health: -6, wealth: -3 },
-      ] },
-    { id: "l_windfall", text: "早年一笔小投资意外有了回报。",
-      opts: [ { t: "收下", wealth: 16, mood: 6 } ] },
-    { id: "l_scandal", text: "一篇爆料贴把你的旧事翻了出来。",
-      opts: [
-        { t: "诚恳道歉", succ: 0.55, win: { reputation: 4, mood: 2 }, lose: { reputation: -12, mood: -8 } },
-        { t: "律师函", reputation: -2, wealth: -8, mood: -4 },
-      ] },
-  ];
+  function eraOk(ev) {
+    if (!ev.era) return true;
+    return S.year >= ev.era[0] && S.year <= ev.era[1];
+  }
+  function condOk(ev, r) {
+    if (!ev.cond) return true;
+    if (ev.cond.trust !== undefined && (!r || r.trust < ev.cond.trust)) return false;
+    if (ev.cond.aff !== undefined && (!r || r.affection < ev.cond.aff)) return false;
+    return true;
+  }
 
   // ---------- 运行时状态 ----------
   let S = null;
@@ -198,6 +136,7 @@
       talents: [], memoriesUsed: 0, divergence: 0, memoryChance: 1,
       relations: {}, log: [], achievements: [], generation: 1,
       works: [], partner: null, ended: false,
+      graph: { nodes: [], edges: [] },
     };
     ATTRS.forEach((a) => (S.player.attrs[a.key] = 30 + rnd(20)));
     renderSetup();
@@ -211,6 +150,7 @@
 
   function startLife() {
     applyOrigin();
+    S.graph.nodes.push({ id: "player", label: S.player.name + "(你)", kind: "self" });
     S.memoryChance = 1 + (S.talents.includes("t_memory") ? 1 : 0);
     pushLog(`【第 ${S.generation} 世 · ${S.year}】你以 ${S.player.age} 岁之龄重生在 ${S.player.gender === "男" ? "男" : "女"}主角的身体里，起点：${ORIGINS.find((o) => o.id === S.player.origin).name}。目标路线：${ROUTES.find((r) => r.id === S.route).name}。`);
     renderMain();
@@ -221,16 +161,32 @@
     if (S.log.length > 200) S.log.pop();
   }
 
+  function grantAch(title) {
+    if (!title) return;
+    if (!S.achievements.includes(title)) S.achievements.push(title);
+    if (!S.graph.nodes.some((x) => x.label === title)) S.graph.nodes.push({ label: title, kind: "ach" });
+  }
+
+  function addEdge(a, b, kind) {
+    if (!a || !b) return;
+    if (!S.graph.nodes.some((x) => x.id === a)) S.graph.nodes.push({ id: a, label: a, kind: "npc" });
+    if (!S.graph.nodes.some((x) => x.id === b)) S.graph.nodes.push({ id: b, label: b, kind: "npc" });
+    if (!S.graph.edges.some((e) => e.from === a && e.to === b && e.kind === kind)) {
+      S.graph.edges.push({ from: a, to: b, kind });
+    }
+  }
+
   // ---------- 行动 ----------
   function doWork() {
     const route = ROUTES.find((r) => r.id === S.route);
-    const evs = CAREER_EVENTS.filter((e) => !e.need || e.need === route.kind);
+    const evs = CAREER_EVENTS.filter((e) => eraOk(e) && (!e.need || e.need === route.kind));
+    if (evs.length === 0) { flash("这阶段暂时没有合适的公开工作机会，换个行动吧。"); return; }
     const ev = pick(evs);
     let text = ev.text;
     const needVal = S.player.attrs[route.need] || 0;
     if (ev.need === true) text = "一个剧组开放试镜，需要你的" + ATTRS.find((a) => a.key === route.need).name + "（当前 " + needVal + "）支撑。";
     runChoice({
-      title: ev.title, text, opts: ev.opts, kind: "work", route, attr: route.need,
+      title: ev.title, text, opts: ev.opts, kind: "work", route, attr: route.need, evId: ev.id,
     });
   }
 
@@ -238,7 +194,7 @@
     const pool = activeNpcs(S.year).filter((n) => n.id !== "player" && (!S.partner || n.id !== S.partner));
     const n = pick(pool);
     const r = relOf(n.id);
-    const ev = pick(SOCIAL_EVENTS.filter((e) => !e.cond || e.cond(r)));
+    const ev = pick(SOCIAL_EVENTS.filter((e) => eraOk(e) && condOk(e, r)));
     resolveSocialEvent(ev, n, r);
   }
 
@@ -331,11 +287,13 @@
 
   function resolveSocialEvent(ev, n, r) {
     lastOutcome = { title: "社交：" + n.name, text: ev.text.replace("{n}", n.name), opts: ev.opts, kind: "social", npc: n, rel: r };
+    addEdge("player", n.id, "认识");
     renderChoice(lastOutcome);
   }
 
   function resolveRomanceEvent(ev, n, r) {
     lastOutcome = { title: "感情：" + n.name, text: ev.text.replace("{n}", n.name), opts: ev.opts, kind: "romance", npc: n, rel: r };
+    addEdge("player", n.id, "恋人");
     renderChoice(lastOutcome);
   }
 
@@ -356,8 +314,10 @@
       if (res.aff) r.affection = clamp(r.affection + res.aff, -100, 100);
       if (res.trust) r.trust = clamp(r.trust + res.trust, 0, 100);
       if (res.favorDebt) r.favorDebt += res.favorDebt;
-      if (res.title && cfg.kind === "romance") { S.partner = cfg.npc.id; S.achievements.push(res.title.replace("{n}", cfg.npc.name)); }
+      if (res.title && cfg.kind === "romance") { S.partner = cfg.npc.id; grantAch(res.title.replace("{n}", cfg.npc.name)); }
     }
+    if (cfg.kind === "work" && res._roll && cfg.evId) grantAch("作品：" + cfg.title);
+    if (cfg.kind === "work" && res._roll && res.fame >= 14) grantAch("代表作：《" + cfg.title + "》");
     let msg = (cfg.text || "") + " 你选择：「" + opt.t + "」。";
     if (res._roll !== undefined) msg += res.won ? " 顺利。" : " 不如意。";
     pushLog(msg);
@@ -534,6 +494,26 @@
         </div>
       </div>
       <div class="card log"><h3>人生日志</h3><div id="loglist">${S.log.map((t)=>`<div>${t}</div>`).join("")}</div></div>
+      <div class="card">
+        <h3>关系图谱（${S.graph.nodes.length} 节点 / ${S.graph.edges.length} 条联系）</h3>
+        <div class="graph">
+          ${(S.graph.edges.length
+            ? S.graph.edges.map((e) => {
+                const a = (S.graph.nodes.find((n) => n.id === e.from) || {}).label || e.from;
+                const b = (S.graph.nodes.find((n) => n.id === e.to) || {}).label || e.to;
+                return `<div class="gedge"><b>${a}</b> —${e.kind}→ <b>${b}</b></div>`;
+              })
+            : ["<div class='mini'>还没有任何社交记录，去结交或恋爱吧。</div>"]).join("")}
+        </div>
+      </div>
+      <div class="card">
+        <h3>成就墙（${S.achievements.length}）</h3>
+        <div class="ach">
+          ${(S.achievements.length
+            ? S.achievements.map((a) => `<span class="badge">${a}</span>`).join("")
+            : "<span class='mini'>尚无成就，做出作品与感情里程碑后会点亮。</span>")}
+        </div>
+      </div>
       <div id="flash" class="flash"></div>
     `;
     document.querySelectorAll(".acts button").forEach((b) => {

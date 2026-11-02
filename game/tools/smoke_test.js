@@ -26,6 +26,7 @@ global.window.addEventListener = () => {};
 const base = path.join(__dirname, "..", "data");
 require(path.join(base, "npcs.js"));
 require(path.join(base, "timeline.js"));
+require(path.join(base, "events.js"));
 require(path.join(__dirname, "..", "game.js"));
 if (typeof global.__onReady === "function") global.__onReady();
 
@@ -75,12 +76,15 @@ if (last.ended) {
 const romance = window.NPCS.filter((n) => n.romanceEnabled).length;
 const protoRom = window.NPCS.filter((n) => n.kind.startsWith("prototype") && n.romanceEnabled).length;
 const allActive = window.NPCS.every((n) => n.activeFrom >= 2000 && n.activeTo >= n.activeFrom);
+const evCats = window.EVENTS ? Object.keys(window.EVENTS) : [];
+const evCount = window.EVENTS ? Object.values(window.EVENTS).reduce((a, c) => a + c.length, 0) : 0;
 console.log("\n断言:");
 console.log("  NPC 总数 =", window.NPCS.length, window.NPCS.length === 202 ? "OK" : "FAIL");
 console.log("  可攻略原创 =", romance, romance === 20 ? "OK" : "FAIL");
 console.log("  原型参与恋爱 =", protoRom, protoRom === 0 ? "OK" : "FAIL");
 console.log("  时间均有效 =", allActive, allActive ? "OK" : "FAIL");
+console.log("  事件库加载 =", evCats.join("/"), "共", evCount, "条", evCount > 0 ? "OK" : "FAIL");
 
-if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive) ok = false;
+if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive || evCount === 0) ok = false;
 console.log("\n" + (ok ? "SMOKE TEST PASS" : "SMOKE TEST FAIL"));
 process.exit(ok ? 0 : 1);
