@@ -47,6 +47,16 @@
   .gedge b { color:var(--acc2); }
   .ach { display:flex; flex-wrap:wrap; gap:6px; }
   .badge { background:linear-gradient(120deg,#2a2350,#3a2a60); border:1px solid #4a3a80; border-radius:16px; padding:5px 12px; font-size:12px; color:#e8e9f3; }
+  .topbar { display:flex; align-items:center; gap:14px; }
+  .self-av { width:64px; height:64px; flex:0 0 auto; }
+  .self-av .portrait, .av .portrait { width:100%; height:100%; display:block; border-radius:14px; }
+  .self-info { display:flex; flex-wrap:wrap; gap:6px; }
+  .choice-head { display:flex; gap:14px; align-items:center; margin-bottom:10px; }
+  .av { width:88px; height:88px; flex:0 0 auto; }
+  .choice-meta h2 { margin:0 0 6px; }
+  .rel { color:var(--mut); font-size:13px; margin:0; }
+  .portrait { animation:pop .25s ease; }
+  @keyframes pop { from { transform:scale(.85); opacity:0; } to { transform:scale(1); opacity:1; } }
   .choice .ctext { color:#cdd2ef; line-height:1.6; }
   .opts { display:flex; flex-direction:column; gap:8px; margin:14px 0; }
   .opts button { text-align:left; }
@@ -60,6 +70,7 @@
 <script src="data/npcs.js"></script>
 <script src="data/timeline.js"></script>
 <script src="data/events.js"></script>
+<script src="data/portraits.js"></script>
 <script src="game.js"></script>
 </body>
 </html>

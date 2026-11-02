@@ -423,6 +423,17 @@
     return `<div class="stat"><span>${name}</span><div class="bar"><i style="width:${pct}%"></i></div><b>${Math.round(val)}</b></div>`;
   }
 
+  function portraitOf(npc) {
+    if (!window.PORTRAITS) return "";
+    const id = npc.id || "x";
+    if (window.PORTRAITS.hasCustom(id)) return `<img class="portrait" src="data/portraits/${id}.png" alt="${npc.name}">`;
+    return window.PORTRAITS.portrait({ id, name: npc.name, gender: npc.gender, tier: npc.tier, npc });
+  }
+  function selfPortrait() {
+    if (!window.PORTRAITS) return "";
+    return window.PORTRAITS.portrait({ id: "player", name: S.player.name, gender: S.player.gender, tier: "S" });
+  }
+
   function renderSetup(reborn) {
     const app = $("app");
     const origins = ORIGINS.map((o) => `<option value="${o.id}">${o.name} — ${o.note}</option>`).join("");
@@ -467,11 +478,14 @@
     const partHtml = S.partner ? "伴侣：" + (window.NPCS.find((n) => n.id === S.partner) || {}).name : "单身";
     app.innerHTML = `
       <div class="topbar">
-        <span class="tag">第 ${S.generation} 世</span>
-        <span class="tag">${p.name} · ${p.gender} · ${p.age}岁</span>
-        <span class="tag">${S.year} 年 Q${S.quarter}</span>
-        <span class="tag">${ROUTES.find((r)=>r.id===S.route).name}</span>
-        <span class="tag">偏离度 ${Math.round(S.divergence)}</span>
+        <div class="self-av">${selfPortrait()}</div>
+        <div class="self-info">
+          <span class="tag">第 ${S.generation} 世</span>
+          <span class="tag">${p.name} · ${p.gender} · ${p.age}岁</span>
+          <span class="tag">${S.year} 年 Q${S.quarter}</span>
+          <span class="tag">${ROUTES.find((r)=>r.id===S.route).name}</span>
+          <span class="tag">偏离度 ${Math.round(S.divergence)}</span>
+        </div>
       </div>
       <div class="grid">
         <div class="card">
@@ -533,9 +547,18 @@
 
   function renderChoice(cfg) {
     const app = $("app");
+    const npc = cfg.npc;
+    const av = npc ? portraitOf(npc) : "";
+    const relHtml = npc ? `<p class="rel">好感 ${clamp(cfg.rel.affection,-100,100)} · 信任 ${clamp(cfg.rel.trust,0,100)}${(cfg.kind==="romance")?" · 感情线":""}</p>` : "";
     app.innerHTML = `
       <div class="card choice">
-        <h2>${cfg.title}</h2>
+        <div class="choice-head">
+          ${av ? `<div class="av">${av}</div>` : ""}
+          <div class="choice-meta">
+            <h2>${cfg.title}</h2>
+            ${relHtml}
+          </div>
+        </div>
         <p class="ctext">${cfg.text}</p>
         <div class="opts">
           ${cfg.opts.map((o, i) => `<button data-i="${i}">${o.t}${o.succ !== undefined ? "（成功率 " + Math.round(o.succ * 100) + "%）" : ""}</button>`).join("")}
