@@ -39,15 +39,18 @@ function autoplay(opts, maxTurns) {
   let turns = 0;
   let choices = 0;
   let ended = false;
-  const actions = ["work", "social", "romance", "memory", "train", "rest"];
+  const actions = ["work", "social", "romance", "memory", "train", "rest", "free"];
+  let sawStamina = false;
   while (turns < maxTurns) {
     if (G.state.ended) { ended = true; break; }
     if (G.pendingChoice()) {
       G.choose(Math.floor(Math.random() * G.state.ended ? 0 : 2) % 2);
       choices++;
     } else {
-      G.act(actions[Math.floor(Math.random() * actions.length)]);
+      const a = actions[Math.floor(Math.random() * actions.length)];
+      G.act(a, a === "free" ? "写一首关于故乡的歌" : undefined);
     }
+    if (typeof G.state.player.stamina === "number") sawStamina = true;
     turns++;
   }
   return { turns, choices, ended, state: G.state };
@@ -90,7 +93,11 @@ console.log("  叙事层加载 =", narKeys.join("/"), narKeys.length >= 4 ? "OK"
 const sampleLog = runs[0].state.log.join(" ");
 const hasNarr = sampleLog.includes("重生") || sampleLog.includes("年 ——") || sampleLog.includes("庆功");
 console.log("  叙事落地(日志含序章/章节/收束) =", hasNarr, hasNarr ? "OK" : "FAIL");
+const hasStamina = runs.every((r) => typeof r.state.player.stamina === "number");
+const hasFree = runs.some((r) => r.state.log.some((t) => t.includes("自由行动")));
+console.log("  体力值存在 =", hasStamina, hasStamina ? "OK" : "FAIL");
+console.log("  自由行动落地 =", hasFree, hasFree ? "OK" : "FAIL");
 
-if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive || evCount === 0 || narKeys.length < 4 || !hasNarr) ok = false;
+if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive || evCount === 0 || narKeys.length < 4 || !hasNarr || !hasStamina || !hasFree) ok = false;
 console.log("\n" + (ok ? "SMOKE TEST PASS" : "SMOKE TEST FAIL"));
 process.exit(ok ? 0 : 1);

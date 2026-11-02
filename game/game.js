@@ -131,7 +131,7 @@
 
   function newGame() {
     S = {
-      player: { name: "", gender: "男", age: 18, origin: "amateur", attrs: {}, fame: 0, wealth: 10, reputation: 0, health: 80, mood: 60 },
+      player: { name: "", gender: "男", age: 18, origin: "amateur", attrs: {}, fame: 0, wealth: 10, reputation: 0, health: 80, mood: 60, stamina: 100 },
       year: 2000, quarter: 1, route: "actor",
       talents: [], memoriesUsed: 0, divergence: 0, memoryChance: 1,
       relations: {}, log: [], achievements: [], generation: 1,
@@ -190,6 +190,8 @@
 
   // ---------- 行动 ----------
   function doWork() {
+    if (S.player.stamina < 25 && !spendStamina(25)) { flash("体力不足，先休息或选轻松行动。"); return; }
+    spendStamina(25);
     const route = ROUTES.find((r) => r.id === S.route);
     const evs = CAREER_EVENTS.filter((e) => eraOk(e) && (!e.need || e.need === route.kind));
     if (evs.length === 0) { flash("这阶段暂时没有合适的公开工作机会，换个行动吧。"); return; }
@@ -203,6 +205,8 @@
   }
 
   function doSocial() {
+    if (S.player.stamina < 15 && !spendStamina(15)) { flash("体力不足，先休息或选轻松行动。"); return; }
+    spendStamina(15);
     const pool = activeNpcs(S.year).filter((n) => n.id !== "player" && (!S.partner || n.id !== S.partner));
     const n = pick(pool);
     const r = relOf(n.id);
@@ -211,6 +215,8 @@
   }
 
   function doRomance() {
+    if (S.player.stamina < 20 && !spendStamina(20)) { flash("体力不足，先休息或选轻松行动。"); return; }
+    spendStamina(20);
     if (!S.partner) {
       const pool = activeNpcs(S.year).filter((n) => n.romanceEnabled && relOf(n.id).affection >= 10);
       if (pool.length === 0) {
@@ -235,6 +241,7 @@
       flash("今年前世记忆已用完（每年 " + S.memoryChance + " 次）。");
       return;
     }
+    spendStamina(10);
     const tier = S.divergence > 40 ? "low" : S.divergence > 15 ? "medium" : "high";
     const future = window.TIMELINE.filter((y) => y.year > S.year && y.year <= S.year + 6);
     if (future.length === 0) { flash("已经走到时间尽头，没有更多前世记忆可取。"); return; }
@@ -257,6 +264,7 @@
   }
 
   function doTrain() {
+    spendStamina(20);
     const a = pick(ATTRS);
     const g = 3 + rnd(4);
     S.player.attrs[a.key] = clamp(S.player.attrs[a.key] + g, 0, 100);
@@ -265,10 +273,40 @@
     afterAction();
   }
 
+  // 自由行动：玩家自己写想做的事，按内容关键词给出轻量叙事与属性反馈。
+  const FREE_KEYWORDS = [
+    { k: ["歌", "唱", "专辑", "巡演", "创作曲"], attr: "sing", fame: 6, mood: 3, stamina: 18, note: "你在出租屋里反复打磨旋律，录了小样发到网上。" },
+    { k: ["戏", "演", "试镜", "剧本", "电影"], attr: "act", fame: 6, mood: 3, stamina: 18, note: "你拿着剧本对镜练习，为一个眼神琢磨到深夜。" },
+    { k: ["健", "跑", "健身", "锻炼", "瑜伽"], attr: null, health: 8, stamina: -6, mood: 4, note: "你逼着自己规律作息、去公园跑步，气色好了些。" },
+    { k: ["书", "学", "课", "读", "进修"], attr: null, talent: 5, mood: 2, stamina: 12, note: "你报了班补课，把前世的见识一点点补回手里。" },
+    { k: ["约", "会", "见", "逛", "聚"], attr: null, mood: 6, social: 4, stamina: 10, note: "你约了朋友出去走走，圈里又多了几条人脉。" },
+    { k: ["投", "钱", "生意", "理财", "副业"], attr: null, wealth: 8, social: 2, stamina: 8, note: "你拿闲钱做了点小投资，账面多了一笔进账。" },
+  ];
+  function doFree(text) {
+    text = (text || "").trim();
+    if (!text) { flash("写点你想做的事吧。"); return; }
+    spendStamina(12);
+    const hit = FREE_KEYWORDS.find((fk) => fk.k.some((w) => text.includes(w)))
+      || { attr: null, fame: 2, mood: 2, stamina: 8, note: "你按自己的想法折腾了一个季度，平淡却踏实。" };
+    const p = S.player;
+    if (hit.attr) p.attrs[hit.attr] = clamp(p.attrs[hit.attr] + 2 + rnd(3), 0, 100);
+    if (hit.fame) p.fame = clamp(p.fame + hit.fame, 0, 100);
+    if (hit.health) p.health = clamp(p.health + hit.health, 0, 100);
+    if (hit.mood) p.mood = clamp(p.mood + hit.mood, 0, 100);
+    if (hit.social) p.social = clamp(p.social + hit.social, 0, 100);
+    if (hit.talent) p.talent = clamp(p.talent + hit.talent, 0, 100);
+    if (hit.wealth) p.wealth = clamp(p.wealth + hit.wealth, -200, 100);
+    if (hit.stamina && hit.stamina < 0) p.stamina = clamp(p.stamina + hit.stamina, 0, 100);
+    pushLog(`自由行动「${text}」：${hit.note}（体力 -${Math.abs(hit.stamina || 12) < 0 ? 0 : 12}）`);
+    flash("自由行动已记录，时间推进一个季度。");
+    afterAction();
+  }
+
   function doRest() {
     S.player.mood = clamp(S.player.mood + 14, 0, 100);
     S.player.health = clamp(S.player.health + 8, 0, 100);
-    pushLog("你给自己放了个假，身心恢复了一些。");
+    S.player.stamina = clamp(S.player.stamina + 35, 0, 100);
+    pushLog("你给自己放了个假，身心与体力都恢复了一些。");
     afterAction();
   }
 
@@ -314,7 +352,8 @@
     const res = Object.assign({}, opt);
     if (opt.succ !== undefined) {
       const attrVal = cfg.attr ? (S.player.attrs[cfg.attr] || 0) : (S.player.social || 0);
-      const p = clamp(opt.succ + attrVal / 250 + (S.player.social || 0) / 400, 0.05, 0.95);
+      const stamPenalty = S.player.stamina < 20 ? -0.15 : 0;
+      const p = clamp(opt.succ + attrVal / 250 + (S.player.social || 0) / 400 + stamPenalty, 0.05, 0.95);
       const win = Math.random() < p;
       const outcome = win ? opt.win : opt.lose;
       Object.assign(res, outcome || {});
@@ -359,6 +398,15 @@
     });
     if (res.wealth && S.talents.includes("t_biz")) S.player.wealth = clamp(S.player.wealth + Math.round(res.wealth * 0.3), -200, 100);
     if (res.favorDebt) S.player.social = clamp(S.player.social - 2, 0, 100);
+  }
+
+  // 体力：行动消耗、休息/自然恢复。耗尽则行动打折并提示。
+  function spendStamina(cost) {
+    cost = cost || 0;
+    if (S.player.stamina <= 0) { S.player.stamina = 0; return false; }
+    S.player.stamina = clamp(S.player.stamina - cost, 0, 100);
+    if (S.player.stamina === 0) flash("体力见底，接下来行动效率会下降，考虑休息。");
+    return true;
   }
 
   function maybeRandomEvent() {
@@ -442,7 +490,7 @@
       talentBonus: Math.min(2, Math.floor(S.player.fame / 40)),
     };
     S = {
-      player: { name: "", gender: S.player.gender, age: 16 + rnd(7), origin: "amateur", attrs: {}, fame: 0, wealth: 10, reputation: 0, health: 80, mood: 60 },
+      player: { name: "", gender: S.player.gender, age: 16 + rnd(7), origin: "amateur", attrs: {}, fame: 0, wealth: 10, reputation: 0, health: 80, mood: 60, stamina: 100 },
       year: 2000, quarter: 1, route: S.route,
       talents: S.talents.slice(0, carry.talentBonus), memoriesUsed: 0, divergence: 0, memoryChance: 1 + (S.talents.includes("t_memory") ? 1 : 0),
       relations: {}, log: [], achievements: carry.achievements, generation: carry.generation,
@@ -518,7 +566,7 @@
     const p = S.player;
     const app = $("app");
     const attrHtml = ATTRS.map((a) => bar(a.name, p.attrs[a.key], 100)).join("");
-    const secHtml = bar("名气", p.fame, 100) + bar("财富", p.wealth + 100, 200) + bar("口碑", p.reputation + 100, 200) + bar("身体", p.health, 100) + bar("心情", p.mood, 100);
+    const secHtml = bar("名气", p.fame, 100) + bar("财富", p.wealth + 100, 200) + bar("口碑", p.reputation + 100, 200) + bar("身体", p.health, 100) + bar("心情", p.mood, 100) + bar("体力", p.stamina, 100);
     const era = window.TIMELINE.find((y) => y.year === S.year) || { era: "", opportunity: {} };
     const worksHtml = S.works.slice(-6).map((w) => `<li>${w.year} ${w.title}</li>`).join("") || "<li>暂无代表作</li>";
     const partHtml = S.partner ? "伴侣：" + (window.NPCS.find((n) => n.id === S.partner) || {}).name : "单身";
@@ -548,6 +596,11 @@
             <button data-a="memory">前世记忆 (${S.memoriesUsed}/${S.memoryChance})</button>
             <button data-a="train">磨练属性</button>
             <button data-a="rest">休息调整</button>
+          </div>
+          <h4>自由行动（写你想做的事）</h4>
+          <div class="free">
+            <input id="f_free" placeholder="例如：写一首关于故乡的歌 / 私下约导演吃饭 / 去健身" />
+            <button data-a="free" id="b_free">行动</button>
           </div>
           <p class="era">时代：${era.era}　|　本年度风向：${era.opportunity.title || "—"}</p>
           <h4>近况代表作</h4><ul class="works">${worksHtml}</ul>
@@ -585,6 +638,7 @@
         else if (a === "memory") doMemory();
         else if (a === "train") doTrain();
         else if (a === "rest") doRest();
+        else if (a === "free") doFree($("f_free") ? $("f_free").value : "");
       };
     });
     const ll = $("loglist");
@@ -659,13 +713,14 @@
       S.talents = (opts && opts.talents) || [];
       startLife();
     },
-    act(a) {
+    act(a, freeText) {
       if (a === "work") doWork();
       else if (a === "social") doSocial();
       else if (a === "romance") doRomance();
       else if (a === "memory") doMemory();
       else if (a === "train") doTrain();
       else if (a === "rest") doRest();
+      else if (a === "free") doFree(freeText);
     },
     choose(i) { if (lastOutcome) resolveChoiceFromOutcome(lastOutcome.opts[i]); },
     pendingChoice() { return !!lastOutcome; },
