@@ -1,0 +1,11 @@
+# 本地工作目录与临时文件
+.work/
+
+# DSH 技能配置（本地环境相关）
+.dsh/
+
+# 系统与编辑器杂物
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
