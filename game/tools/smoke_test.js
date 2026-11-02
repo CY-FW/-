@@ -27,6 +27,7 @@ const base = path.join(__dirname, "..", "data");
 require(path.join(base, "npcs.js"));
 require(path.join(base, "timeline.js"));
 require(path.join(base, "events.js"));
+require(path.join(base, "narrative.js"));
 require(path.join(__dirname, "..", "game.js"));
 if (typeof global.__onReady === "function") global.__onReady();
 
@@ -84,7 +85,12 @@ console.log("  可攻略原创 =", romance, romance === 20 ? "OK" : "FAIL");
 console.log("  原型参与恋爱 =", protoRom, protoRom === 0 ? "OK" : "FAIL");
 console.log("  时间均有效 =", allActive, allActive ? "OK" : "FAIL");
 console.log("  事件库加载 =", evCats.join("/"), "共", evCount, "条", evCount > 0 ? "OK" : "FAIL");
+const narKeys = window.NARRATIVE ? Object.keys(window.NARRATIVE) : [];
+console.log("  叙事层加载 =", narKeys.join("/"), narKeys.length >= 4 ? "OK" : "FAIL");
+const sampleLog = runs[0].state.log.join(" ");
+const hasNarr = sampleLog.includes("重生") || sampleLog.includes("年 ——") || sampleLog.includes("庆功");
+console.log("  叙事落地(日志含序章/章节/收束) =", hasNarr, hasNarr ? "OK" : "FAIL");
 
-if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive || evCount === 0) ok = false;
+if (window.NPCS.length !== 202 || protoRom !== 0 || !allActive || evCount === 0 || narKeys.length < 4 || !hasNarr) ok = false;
 console.log("\n" + (ok ? "SMOKE TEST PASS" : "SMOKE TEST FAIL"));
 process.exit(ok ? 0 : 1);

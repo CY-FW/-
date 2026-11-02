@@ -136,7 +136,7 @@
       talents: [], memoriesUsed: 0, divergence: 0, memoryChance: 1,
       relations: {}, log: [], achievements: [], generation: 1,
       works: [], partner: null, ended: false,
-      graph: { nodes: [], edges: [] },
+      graph: { nodes: [], edges: [] }, beatenNpc: {},
     };
     ATTRS.forEach((a) => (S.player.attrs[a.key] = 30 + rnd(20)));
     renderSetup();
@@ -152,8 +152,20 @@
     applyOrigin();
     S.graph.nodes.push({ id: "player", label: S.player.name + "(你)", kind: "self" });
     S.memoryChance = 1 + (S.talents.includes("t_memory") ? 1 : 0);
-    pushLog(`【第 ${S.generation} 世 · ${S.year}】你以 ${S.player.age} 岁之龄重生在 ${S.player.gender === "男" ? "男" : "女"}主角的身体里，起点：${ORIGINS.find((o) => o.id === S.player.origin).name}。目标路线：${ROUTES.find((r) => r.id === S.route).name}。`);
+    const o = ORIGINS.find((x) => x.id === S.player.origin);
+    const rt = ROUTES.find((r) => r.id === S.route);
+    pushLog(`【第 ${S.generation} 世 · ${S.year}】你以 ${S.player.age} 岁之龄重生回 ${S.player.gender === "男" ? "男" : "女"}主角的身体里，起点：${o.name}。目标路线：${rt.name}。`);
+    const pro = (window.NARRATIVE && window.NARRATIVE.prologue[S.player.origin]) || "";
+    if (pro) pushLog(fillPrologue(pro));
     renderMain();
+  }
+
+  function fillPrologue(t) {
+    return t
+      .replace("{name}", S.player.name)
+      .replace("{gender}", S.player.gender)
+      .replace("{age}", S.player.age)
+      .replace("{route}", ROUTES.find((r) => r.id === S.route).name);
   }
 
   function pushLog(t) {
@@ -320,7 +332,23 @@
     if (cfg.kind === "work" && res._roll && res.fame >= 14) grantAch("代表作：《" + cfg.title + "》");
     let msg = (cfg.text || "") + " 你选择：「" + opt.t + "」。";
     if (res._roll !== undefined) msg += res.won ? " 顺利。" : " 不如意。";
+    // 叙事收束：事业行动的胜/负叙述
+    if (cfg.kind === "work" && window.NARRATIVE) {
+      const beat = pick(res._roll ? window.NARRATIVE.workWin : window.NARRATIVE.workLose);
+      if (beat) msg += " " + beat.replace("{title}", cfg.title || "这个项目").replace("{route}", ROUTES.find((r) => r.id === S.route).name);
+    }
     pushLog(msg);
+    // 关系里程碑叙事（只记录，不重复刷同档）
+    if (cfg.npc && cfg.rel && window.NARRATIVE) {
+      const af = cfg.rel.affection;
+      const tier = af >= 80 ? 80 : af >= 60 ? 60 : af >= 40 ? 40 : af >= 20 ? 20 : 0;
+      const key = (cfg.kind === "romance" ? "romanceBeat" : "socialBeat");
+      const table = window.NARRATIVE[key];
+      if (tier && table[tier] && !S.beatenNpc[cfg.npc.id + tier]) {
+        S.beatenNpc[cfg.npc.id + tier] = true;
+        pushLog(table[tier].replace("{n}", cfg.npc.name));
+      }
+    }
     lastOutcome = null;
     afterAction();
   }
@@ -370,7 +398,21 @@
     }
     if (S.year > 2026 || S.player.health <= 0) { endGame(); return; }
     pushLog(`—— ${S.year} 年 ——`);
+    const intro = yearIntro(S.year);
+    if (intro) pushLog(intro);
     renderMain();
+  }
+
+  function yearIntro(y) {
+    const N = window.NARRATIVE;
+    if (!N) return "";
+    if (N.yearIntro && N.yearIntro[String(y)]) return N.yearIntro[String(y)];
+    if (N.decadePool) {
+      const key = String(y).slice(0, 3);
+      const pool = N.decadePool[key];
+      if (pool) return pick(pool);
+    }
+    return "";
   }
 
   function endGame() {
@@ -385,7 +427,11 @@
     else if (p.health <= 0) title = "英年早逝";
     if (S.partner) title += "（与伴侣相伴）";
     S.lastEnding = title;
+    const epi = (window.NARRATIVE && window.NARRATIVE.ending[title]) ? window.NARRATIVE.ending[title]
+      .replace("{name}", S.player.name).replace("{year}", S.year).replace("{title}", title) : "";
+    S.lastEpilogue = epi;
     pushLog(`【结局】${S.year} 年，你的人生篇章落幕：${title}。`);
+    if (epi) pushLog(epi);
     renderEnding();
   }
 
@@ -400,7 +446,7 @@
       year: 2000, quarter: 1, route: S.route,
       talents: S.talents.slice(0, carry.talentBonus), memoriesUsed: 0, divergence: 0, memoryChance: 1 + (S.talents.includes("t_memory") ? 1 : 0),
       relations: {}, log: [], achievements: carry.achievements, generation: carry.generation,
-      works: [], partner: null, ended: false,
+      works: [], partner: null, ended: false, beatenNpc: {},
     };
     ATTRS.forEach((a) => (S.player.attrs[a.key] = 34 + rnd(20)));
     renderSetup(true);
@@ -579,9 +625,11 @@
       <div class="card ending">
         <h1>人生落幕</h1>
         <p class="big">${S.lastEnding}</p>
+        ${S.lastEpilogue ? `<p class="epi">${S.lastEpilogue}</p>` : ""}
         <p>你活到了 ${S.year} 年，名气 ${Math.round(S.player.fame)}，财富 ${Math.round(S.player.wealth)}，口碑 ${Math.round(S.player.reputation)}。</p>
         <p>累计成就：${S.achievements.length ? S.achievements.join("、") : "无"}</p>
         <p>走过 ${S.generation} 世轮回。</p>
+        <h3>这一世的篇章</h3><div class="endlog">${S.log.slice(0, 40).reverse().map((t)=>`<div>${t}</div>`).join("")}</div>
         <button class="primary" id="b_re">开启下一世（轮回）</button>
         <button class="ghost" id="b_new">重新自定义</button>
       </div>`;
