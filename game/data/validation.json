@@ -1,0 +1,22 @@
+{
+  "npcCount": 202,
+  "byKind": {
+    "industry": 20,
+    "original_artist": 25,
+    "prototype_actor": 67,
+    "prototype_creator": 25,
+    "prototype_singer": 45,
+    "romance": 20
+  },
+  "byTier": {
+    "A": 119,
+    "B": 74,
+    "C": 9
+  },
+  "timelineYears": 27,
+  "uniqueIds": true,
+  "uniqueNames": true,
+  "relationReferencesValid": true,
+  "romanceNpcCount": 20,
+  "prototypeRomanceCount": 0
+}

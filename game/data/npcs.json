@@ -1,0 +1,7150 @@
+{
+  "schemaVersion": 1,
+  "game": "重生2000：娱乐圈",
+  "timeline": {
+    "startYear": 2000,
+    "endYear": 2026,
+    "quartersPerYear": 4
+  },
+  "disclaimer": "本作采用架空娱乐圈设定。所有角色姓名、人物关系与游戏事件均为虚构，不构成对现实人物经历、品行或私生活的陈述。原型化角色只承担公开事业与良性竞争剧情；恋爱和重冲突剧情由原创角色承担。",
+  "design": {
+    "npcCount": 202,
+    "prototypeCount": 157,
+    "originalCount": 45,
+    "activation": "按 activeFrom 进入人物池；未出道者不会提前参与行业项目。",
+    "socialStats": [
+      "affection",
+      "trust",
+      "interest",
+      "favorDebt"
+    ],
+    "romanceRule": "只有 romanceEnabled=true 的原创角色进入可攻略池。"
+  },
+  "npcs": [
+    {
+      "id": "sing_001",
+      "name": "周捷伦",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "创作流行",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_002",
+      "name": "王霏",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "流行天后",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_003",
+      "name": "刘德骅",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "影视歌多栖",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_004",
+      "name": "张雪友",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "实力唱将",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_005",
+      "name": "那瑛",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "流行实力",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_006",
+      "name": "孙艳姿",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "都市流行",
+      "region": "海外",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_007",
+      "name": "蔡依琳",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "唱跳流行",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理想主义",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_008",
+      "name": "梁静如",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "情歌治愈",
+      "region": "海外",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_009",
+      "name": "萧亚萱",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "时尚唱跳",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_010",
+      "name": "五月天阿信",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "乐团创作",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_011",
+      "name": "林骏杰",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "创作流行",
+      "region": "海外",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_012",
+      "name": "潘玮柏",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "嘻哈流行",
+      "region": "港台",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理想主义",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_013",
+      "name": "罗志翔",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "唱跳综艺",
+      "region": "港台",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_014",
+      "name": "张韶涵",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "清亮高音",
+      "region": "港台",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_015",
+      "name": "王心凌",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "甜美流行",
+      "region": "港台",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "外向",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_016",
+      "name": "田馥甄",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "乐团女声",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_017",
+      "name": "陈嘉桦",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "乐团综艺",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_018",
+      "name": "任家萱",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "乐团偶像",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_019",
+      "name": "杨丞琳",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "偶像歌手",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_020",
+      "name": "阿杜",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "沙哑情歌",
+      "region": "海外",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_021",
+      "name": "刀朗",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "西域民谣",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_022",
+      "name": "庞龙",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "C",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "大众情歌",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_023",
+      "name": "杨臣刚",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "C",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "网络歌曲",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_024",
+      "name": "香香",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "C",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "网络甜歌",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_025",
+      "name": "郑源",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "C",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "伤感情歌",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_026",
+      "name": "凤凰传奇玲花",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "民族流行",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_027",
+      "name": "凤凰传奇曾毅",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "民族流行",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_028",
+      "name": "李宇春",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "中性舞台",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_029",
+      "name": "周笔畅",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "实力女声",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_030",
+      "name": "张靓颖",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "实力高音",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_031",
+      "name": "何洁",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "选秀歌手",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_032",
+      "name": "薛之谦",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "创作情歌",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_033",
+      "name": "胡彦斌",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "编曲创作",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_034",
+      "name": "陈亦迅",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "都市情歌",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_035",
+      "name": "容祖儿",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "粤语流行",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "外向",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_036",
+      "name": "谢霆峰",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "摇滚偶像",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_037",
+      "name": "twins阿姣",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "双人偶像",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_038",
+      "name": "twins阿洒",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "双人偶像",
+      "region": "港台",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_039",
+      "name": "许松",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "网络创作",
+      "region": "内地",
+      "activeFrom": 2009,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_040",
+      "name": "汪苏泷",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "校园创作",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_041",
+      "name": "徐良",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "对唱流行",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "直率",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_042",
+      "name": "张碧晨",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "B",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "影视情歌",
+      "region": "内地",
+      "activeFrom": 2014,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理想主义",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_043",
+      "name": "毛不易",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "民谣创作",
+      "region": "内地",
+      "activeFrom": 2017,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_044",
+      "name": "周深",
+      "gender": "男",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手"
+      ],
+      "careerTrack": "music",
+      "style": "空灵声线",
+      "region": "内地",
+      "activeFrom": 2014,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "sing_045",
+      "name": "邓紫棋",
+      "gender": "女",
+      "kind": "prototype_singer",
+      "tier": "A",
+      "professions": [
+        "歌手",
+        "作曲人"
+      ],
+      "careerTrack": "music",
+      "style": "创作高音",
+      "region": "港台",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "music圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_001",
+      "name": "赵微",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧偶像",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_002",
+      "name": "周讯",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "灵气演技",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_003",
+      "name": "章紫怡",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_004",
+      "name": "巩莉",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "文艺电影",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_005",
+      "name": "陈昆",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "青年演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_006",
+      "name": "黄小明",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像演员",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_007",
+      "name": "刘烨",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "文艺电影",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_008",
+      "name": "邓超",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧演员",
+      "region": "内地",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_009",
+      "name": "孙丽",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧演员",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_010",
+      "name": "胡哥",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装偶像",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_011",
+      "name": "刘逸飞",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装偶像",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_012",
+      "name": "杨冥",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视偶像",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_013",
+      "name": "刘诗诗",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装剧演员",
+      "region": "内地",
+      "activeFrom": 2007,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_014",
+      "name": "唐烟",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市偶像",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_015",
+      "name": "赵小刀",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧演员",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_016",
+      "name": "佟丽亚",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装都市",
+      "region": "内地",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_017",
+      "name": "王宝墙",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "草根喜剧",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_018",
+      "name": "黄博",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "喜剧演技",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_019",
+      "name": "徐铮",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "喜剧演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_020",
+      "name": "王保强",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "C",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "动作喜剧",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_021",
+      "name": "范彬彬",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "时尚影视",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_022",
+      "name": "李冰",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_023",
+      "name": "任泉",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_024",
+      "name": "陆毅",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "青春偶像",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_025",
+      "name": "任威",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "警匪动作",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_026",
+      "name": "古天勒",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_027",
+      "name": "刘清云",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "实力电影",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_028",
+      "name": "梁超伟",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "文艺电影",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_029",
+      "name": "张蔓玉",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_030",
+      "name": "张百芝",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影偶像",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_031",
+      "name": "吴彦祖",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "动作剧情",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_032",
+      "name": "甄子单",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "动作电影",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_033",
+      "name": "吴惊",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "动作演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_034",
+      "name": "李连洁",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "功夫电影",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_035",
+      "name": "周兴驰",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "喜剧导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_036",
+      "name": "葛尤",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "喜剧电影",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_037",
+      "name": "姜文",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "实力演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_038",
+      "name": "陈道名",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "正剧演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_039",
+      "name": "陈保国",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "正剧演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_040",
+      "name": "王志文",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "现实题材",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_041",
+      "name": "张国力",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_042",
+      "name": "张铁霖",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "C",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_043",
+      "name": "林心茹",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视偶像",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_044",
+      "name": "贾静文",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装偶像",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_045",
+      "name": "高园园",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市影视",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_046",
+      "name": "张静初",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "文艺电影",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_047",
+      "name": "李小冉",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电视剧演员",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_048",
+      "name": "秦海璐",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "文艺演技",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_049",
+      "name": "梅婷",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "现实题材",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_050",
+      "name": "海清",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市生活",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_051",
+      "name": "姚晨",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "情景喜剧",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_052",
+      "name": "闫妮",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "情景喜剧",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_053",
+      "name": "沙溢",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "情景喜剧",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_054",
+      "name": "白百合",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市电影",
+      "region": "内地",
+      "activeFrom": 2011,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_055",
+      "name": "文章",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市影视",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_056",
+      "name": "倪妮",
+      "gender": "女",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "内地",
+      "activeFrom": 2011,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_057",
+      "name": "井柏然",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "青春电影",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_058",
+      "name": "杨阳",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像演员",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_059",
+      "name": "李易锋",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像演员",
+      "region": "内地",
+      "activeFrom": 2009,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_060",
+      "name": "鹿涵",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像艺人",
+      "region": "海外",
+      "activeFrom": 2012,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_061",
+      "name": "黄子涛",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像艺人",
+      "region": "海外",
+      "activeFrom": 2012,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_062",
+      "name": "张艺兴",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "唱跳演员",
+      "region": "海外",
+      "activeFrom": 2012,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_063",
+      "name": "王俊楷",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "少年偶像",
+      "region": "内地",
+      "activeFrom": 2013,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_064",
+      "name": "王原",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "B",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "少年偶像",
+      "region": "内地",
+      "activeFrom": 2013,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_065",
+      "name": "易烊千禧",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "内地",
+      "activeFrom": 2013,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理性",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_066",
+      "name": "肖战争",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装偶像",
+      "region": "内地",
+      "activeFrom": 2016,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "act_067",
+      "name": "王亦博",
+      "gender": "男",
+      "kind": "prototype_actor",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "唱跳演员",
+      "region": "内地",
+      "activeFrom": 2016,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_001",
+      "name": "张艺谋",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "电影导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_002",
+      "name": "冯晓刚",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "商业导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_003",
+      "name": "陈凯歌",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "艺术导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_004",
+      "name": "王家卫",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "文艺导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "外向",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_005",
+      "name": "吴宇森",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "动作导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "理性",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_006",
+      "name": "徐克",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "武侠导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "理性",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_007",
+      "name": "杜琪峰",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "类型导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "务实",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_008",
+      "name": "刘伟强",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "商业导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "外向",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_009",
+      "name": "陈可辛",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "剧情导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "直率",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_010",
+      "name": "宁浩",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "编剧",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "黑色喜剧",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "慢热",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_011",
+      "name": "乌尔善",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "奇幻导演",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_012",
+      "name": "陈思诚",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "商业导演",
+      "region": "内地",
+      "activeFrom": 2012,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_013",
+      "name": "郭帆",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "科幻导演",
+      "region": "内地",
+      "activeFrom": 2015,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "外向",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_014",
+      "name": "文牧野",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "现实导演",
+      "region": "内地",
+      "activeFrom": 2017,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_015",
+      "name": "贾樟柯",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "艺术导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_016",
+      "name": "娄烨",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "艺术导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_017",
+      "name": "王小帅",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "艺术导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "慢热",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_018",
+      "name": "张一白",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "都市导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_019",
+      "name": "高希希",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "电视导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_020",
+      "name": "郑晓龙",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "电视导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_021",
+      "name": "孔笙",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "电视导演",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_022",
+      "name": "于正",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "编剧",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "编剧制片",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_023",
+      "name": "海岩",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "编剧",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "编剧制片",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_024",
+      "name": "刘镇伟",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "B",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "喜剧导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "make_025",
+      "name": "林超贤",
+      "gender": "男",
+      "kind": "prototype_creator",
+      "tier": "A",
+      "professions": [
+        "导演",
+        "制片人"
+      ],
+      "careerTrack": "production",
+      "style": "动作导演",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "慢热",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "公开事业、合作与良性竞争",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_001",
+      "name": "王京花",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "王牌经纪人"
+      ],
+      "careerTrack": "industry",
+      "style": "王牌经纪人",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_002",
+      "name": "杨天真",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "明星经纪"
+      ],
+      "careerTrack": "industry",
+      "style": "明星经纪",
+      "region": "内地",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "慢热",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_003",
+      "name": "龙丹妮",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "选秀制片"
+      ],
+      "careerTrack": "industry",
+      "style": "选秀制片",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_004",
+      "name": "杜华",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "偶像经纪"
+      ],
+      "careerTrack": "industry",
+      "style": "偶像经纪",
+      "region": "内地",
+      "activeFrom": 2009,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_005",
+      "name": "王长田",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "影视出品"
+      ],
+      "careerTrack": "industry",
+      "style": "影视出品",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_006",
+      "name": "王中磊",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "影视出品"
+      ],
+      "careerTrack": "industry",
+      "style": "影视出品",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_007",
+      "name": "于冬",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "电影出品"
+      ],
+      "careerTrack": "industry",
+      "style": "电影出品",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "外向",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_008",
+      "name": "韩三平",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "电影出品"
+      ],
+      "careerTrack": "industry",
+      "style": "电影出品",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_009",
+      "name": "张伟平",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "电影制片"
+      ],
+      "careerTrack": "industry",
+      "style": "电影制片",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_010",
+      "name": "张纪中",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "电视制片"
+      ],
+      "careerTrack": "industry",
+      "style": "电视制片",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_011",
+      "name": "何炅",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_012",
+      "name": "汪涵",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_013",
+      "name": "李湘",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_014",
+      "name": "谢娜",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "内地",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_015",
+      "name": "李静",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "访谈主持"
+      ],
+      "careerTrack": "industry",
+      "style": "访谈主持",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_016",
+      "name": "陈鲁豫",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "访谈主持"
+      ],
+      "careerTrack": "industry",
+      "style": "访谈主持",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_017",
+      "name": "蔡康永",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "理性",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_018",
+      "name": "徐熙娣",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "综艺主持"
+      ],
+      "careerTrack": "industry",
+      "style": "综艺主持",
+      "region": "港台",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "港台圈",
+        "商业电影圈"
+      ],
+      "personality": [
+        "外向",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_019",
+      "name": "卓远",
+      "gender": "男",
+      "kind": "industry",
+      "tier": "A",
+      "professions": [
+        "娱乐记者"
+      ],
+      "careerTrack": "industry",
+      "style": "娱乐记者",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "biz_020",
+      "name": "苏芒",
+      "gender": "女",
+      "kind": "industry",
+      "tier": "B",
+      "professions": [
+        "时尚主编"
+      ],
+      "careerTrack": "industry",
+      "style": "时尚主编",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理想主义",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_001",
+      "name": "陆星野",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "偶像演员"
+      ],
+      "careerTrack": "film",
+      "style": "偶像演员",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "直率",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_002",
+      "name": "宋子谦",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "同期竞争",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_003",
+      "name": "沈佳宜",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "演员"
+      ],
+      "careerTrack": "film",
+      "style": "艺校新人",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_004",
+      "name": "顾清歌",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "驻唱歌手"
+      ],
+      "careerTrack": "music",
+      "style": "驻唱歌手",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_005",
+      "name": "韩东旭",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "练习生"
+      ],
+      "careerTrack": "music",
+      "style": "练习生",
+      "region": "内地",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "慢热",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_006",
+      "name": "林晚舟",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "电视剧新人"
+      ],
+      "careerTrack": "music",
+      "style": "电视剧新人",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理想主义",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_007",
+      "name": "苏念",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "网络歌手"
+      ],
+      "careerTrack": "music",
+      "style": "网络歌手",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "理想主义"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_008",
+      "name": "唐子昂",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "选秀歌手"
+      ],
+      "careerTrack": "music",
+      "style": "选秀歌手",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "谨慎",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_009",
+      "name": "许安然",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "选秀艺人"
+      ],
+      "careerTrack": "music",
+      "style": "选秀艺人",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_010",
+      "name": "江辰",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "青春演员"
+      ],
+      "careerTrack": "film",
+      "style": "青春演员",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "慢热",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_011",
+      "name": "夏初",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "古装剧演员"
+      ],
+      "careerTrack": "film",
+      "style": "古装剧演员",
+      "region": "内地",
+      "activeFrom": 2007,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_012",
+      "name": "贺云川",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "电影演员"
+      ],
+      "careerTrack": "film",
+      "style": "电影演员",
+      "region": "内地",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_013",
+      "name": "叶青禾",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "A",
+      "professions": [
+        "唱作歌手"
+      ],
+      "careerTrack": "music",
+      "style": "唱作歌手",
+      "region": "内地",
+      "activeFrom": 2009,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_014",
+      "name": "程亦风",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "综艺艺人"
+      ],
+      "careerTrack": "music",
+      "style": "综艺艺人",
+      "region": "内地",
+      "activeFrom": 2010,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理想主义",
+        "理性"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_015",
+      "name": "白露",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "都市演员"
+      ],
+      "careerTrack": "film",
+      "style": "都市演员",
+      "region": "内地",
+      "activeFrom": 2011,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "务实",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_016",
+      "name": "方屿",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "组合成员"
+      ],
+      "careerTrack": "music",
+      "style": "组合成员",
+      "region": "海外",
+      "activeFrom": 2012,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "海外唱片圈",
+        "流行偶像圈",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_017",
+      "name": "孟繁星",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "少女偶像"
+      ],
+      "careerTrack": "music",
+      "style": "少女偶像",
+      "region": "内地",
+      "activeFrom": 2013,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "外向",
+        "谨慎"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_018",
+      "name": "秦朗",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "流量演员"
+      ],
+      "careerTrack": "film",
+      "style": "流量演员",
+      "region": "内地",
+      "activeFrom": 2014,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_019",
+      "name": "乔安娜",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "C",
+      "professions": [
+        "综艺演员"
+      ],
+      "careerTrack": "film",
+      "style": "综艺演员",
+      "region": "内地",
+      "activeFrom": 2015,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "理想主义",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_020",
+      "name": "谢临",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "网剧演员"
+      ],
+      "careerTrack": "film",
+      "style": "网剧演员",
+      "region": "内地",
+      "activeFrom": 2016,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "谨慎",
+        "敏锐"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_021",
+      "name": "林可可",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "选秀偶像"
+      ],
+      "careerTrack": "music",
+      "style": "选秀偶像",
+      "region": "内地",
+      "activeFrom": 2017,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_022",
+      "name": "罗一帆",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "C",
+      "professions": [
+        "乐队主唱"
+      ],
+      "careerTrack": "music",
+      "style": "乐队主唱",
+      "region": "内地",
+      "activeFrom": 2018,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_023",
+      "name": "简宁",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "短剧演员"
+      ],
+      "careerTrack": "film",
+      "style": "短剧演员",
+      "region": "内地",
+      "activeFrom": 2019,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "敏锐",
+        "慢热"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_024",
+      "name": "周野",
+      "gender": "男",
+      "kind": "original_artist",
+      "tier": "C",
+      "professions": [
+        "直播艺人"
+      ],
+      "careerTrack": "music",
+      "style": "直播艺人",
+      "region": "内地",
+      "activeFrom": 2020,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "music圈"
+      ],
+      "personality": [
+        "务实",
+        "外向"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "orig_025",
+      "name": "顾晚晴",
+      "gender": "女",
+      "kind": "original_artist",
+      "tier": "B",
+      "professions": [
+        "短视频演员"
+      ],
+      "careerTrack": "film",
+      "style": "短视频演员",
+      "region": "内地",
+      "activeFrom": 2021,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派",
+        "film圈"
+      ],
+      "personality": [
+        "外向",
+        "直率"
+      ],
+      "publicGoal": "建立长期职业定位与行业关系网",
+      "romanceEnabled": false,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_001",
+      "name": "沈明珠",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "影视公司继承人"
+      ],
+      "careerTrack": "romance",
+      "style": "影视公司继承人",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "务实"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_002",
+      "name": "秦岚",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "经纪人"
+      ],
+      "careerTrack": "romance",
+      "style": "经纪人",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "理想主义"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_003",
+      "name": "陈叙",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "摄影指导"
+      ],
+      "careerTrack": "romance",
+      "style": "摄影指导",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "务实"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_004",
+      "name": "顾言深",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "外科医生"
+      ],
+      "careerTrack": "romance",
+      "style": "外科医生",
+      "region": "内地",
+      "activeFrom": 2000,
+      "activeTo": 2026,
+      "initialCareerStage": "已出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "慢热"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_005",
+      "name": "林知夏",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "艺校同学"
+      ],
+      "careerTrack": "romance",
+      "style": "艺校同学",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "外向"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_006",
+      "name": "苏景行",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "音乐制作人"
+      ],
+      "careerTrack": "romance",
+      "style": "音乐制作人",
+      "region": "内地",
+      "activeFrom": 2001,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "慢热",
+        "理想主义"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_007",
+      "name": "叶疏影",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "电影编剧"
+      ],
+      "careerTrack": "romance",
+      "style": "电影编剧",
+      "region": "内地",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "外向"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_008",
+      "name": "江慕白",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "大学教师"
+      ],
+      "careerTrack": "romance",
+      "style": "大学教师",
+      "region": "内地",
+      "activeFrom": 2002,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "直率"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_009",
+      "name": "唐婉",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "时尚编辑"
+      ],
+      "careerTrack": "romance",
+      "style": "时尚编辑",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "慢热"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_010",
+      "name": "周屿森",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "运动员"
+      ],
+      "careerTrack": "romance",
+      "style": "运动员",
+      "region": "内地",
+      "activeFrom": 2003,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "慢热"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_011",
+      "name": "许南乔",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "电台主持"
+      ],
+      "careerTrack": "romance",
+      "style": "电台主持",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "直率"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_012",
+      "name": "裴修远",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "建筑设计师"
+      ],
+      "careerTrack": "romance",
+      "style": "建筑设计师",
+      "region": "内地",
+      "activeFrom": 2004,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "直率"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_013",
+      "name": "宋温暖",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "纪录片导演"
+      ],
+      "careerTrack": "romance",
+      "style": "纪录片导演",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "谨慎",
+        "慢热"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_014",
+      "name": "霍云霆",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "制片人"
+      ],
+      "careerTrack": "romance",
+      "style": "制片人",
+      "region": "内地",
+      "activeFrom": 2005,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "外向",
+        "理性"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_015",
+      "name": "温以宁",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "舞蹈演员"
+      ],
+      "careerTrack": "romance",
+      "style": "舞蹈演员",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "直率",
+        "外向"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_016",
+      "name": "陆则明",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "律师"
+      ],
+      "careerTrack": "romance",
+      "style": "律师",
+      "region": "内地",
+      "activeFrom": 2006,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "理性",
+        "理想主义"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_017",
+      "name": "姜茶",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "造型师"
+      ],
+      "careerTrack": "romance",
+      "style": "造型师",
+      "region": "内地",
+      "activeFrom": 2007,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "务实",
+        "理性"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_018",
+      "name": "季川",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "独立导演"
+      ],
+      "careerTrack": "romance",
+      "style": "独立导演",
+      "region": "内地",
+      "activeFrom": 2007,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "慢热",
+        "谨慎"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_019",
+      "name": "安宁",
+      "gender": "女",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "心理咨询师"
+      ],
+      "careerTrack": "romance",
+      "style": "心理咨询师",
+      "region": "内地",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "谨慎"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    },
+    {
+      "id": "love_020",
+      "name": "傅斯年",
+      "gender": "男",
+      "kind": "romance",
+      "tier": "A",
+      "professions": [
+        "科技公司创始人"
+      ],
+      "careerTrack": "romance",
+      "style": "科技公司创始人",
+      "region": "内地",
+      "activeFrom": 2008,
+      "activeTo": 2026,
+      "initialCareerStage": "未出道",
+      "circles": [
+        "内地圈",
+        "学院派"
+      ],
+      "personality": [
+        "敏锐",
+        "务实"
+      ],
+      "publicGoal": "在事业与私人生活之间保持边界",
+      "romanceEnabled": true,
+      "plotScope": "原创事业与关系剧情",
+      "initialRelation": {
+        "affection": 0,
+        "trust": 0,
+        "interest": 0,
+        "favorDebt": 0
+      },
+      "secretOrScandal": null
+    }
+  ],
+  "initialRelations": [
+    {
+      "from": "sing_001",
+      "to": "sing_011",
+      "type": "创作圈同行",
+      "strength": 20,
+      "since": 2000
+    },
+    {
+      "from": "sing_016",
+      "to": "sing_017",
+      "type": "组合成员",
+      "strength": 80,
+      "since": 2000
+    },
+    {
+      "from": "sing_016",
+      "to": "sing_018",
+      "type": "组合成员",
+      "strength": 80,
+      "since": 2000
+    },
+    {
+      "from": "sing_017",
+      "to": "sing_018",
+      "type": "组合成员",
+      "strength": 80,
+      "since": 2000
+    },
+    {
+      "from": "act_001",
+      "to": "act_042",
+      "type": "电视剧合作圈",
+      "strength": 35,
+      "since": 2000
+    },
+    {
+      "from": "act_009",
+      "to": "act_010",
+      "type": "学院校友",
+      "strength": 35,
+      "since": 2000
+    },
+    {
+      "from": "act_013",
+      "to": "act_014",
+      "type": "古装剧合作圈",
+      "strength": 25,
+      "since": 2000
+    },
+    {
+      "from": "make_001",
+      "to": "act_003",
+      "type": "导演演员合作",
+      "strength": 45,
+      "since": 2000
+    },
+    {
+      "from": "make_002",
+      "to": "act_037",
+      "type": "导演演员合作",
+      "strength": 45,
+      "since": 2000
+    },
+    {
+      "from": "make_009",
+      "to": "act_026",
+      "type": "导演演员合作",
+      "strength": 40,
+      "since": 2000
+    },
+    {
+      "from": "biz_011",
+      "to": "biz_012",
+      "type": "综艺同行",
+      "strength": 30,
+      "since": 2000
+    },
+    {
+      "from": "biz_011",
+      "to": "biz_014",
+      "type": "节目合作",
+      "strength": 30,
+      "since": 2000
+    }
+  ]
+}
